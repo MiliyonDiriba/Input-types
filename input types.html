@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+	<title>Input type</title>
+	<meta charset ="utf-8"/>
+	</head>
+		<body>
+		 <p><h2><strong>Welcome to input types </strong></h2></p>
+		 <p>This is demonstrate the new HTML 5 input types and the placeholder,required and autofocus attributes</p>
+		     <form action ="multiple.html" method ="post">
+				 <fieldset>
+					<legend style ="color:white; background-color:black"> this is form for input types</legend>
+					<p>
+					   <label>Color:
+						  <input type ="color" autofocus />(Hexadecimal code such as #ADD8E6)
+					   </label>
+					</p>
+					<p>
+					   <label>Date:
+						  <input type = "date" />(mm/dd/yyyy)
+					   </label>
+					</p>
+					<p>
+					   <label>Datetime-local:
+						  <input type = "datetime-local" />(mm/dd/yyyy TT:MM AM/PM, such as 14/10/2022,10:49 AM)
+					   </label>
+					</p>
+					<p>
+					   <label>email:
+						  <input type = "email" 
+								 placeholder ="name@domain.com" required />name@domain.com
+					   </label>
+					</p>
+					<p>
+					   <label>Month:
+						  <input type = "month" />(yyyy/mm)
+					   </label>
+					</p>
+					<p>
+					   <label>Number:
+						  <input type = "number" 
+								 min ="0" 
+								 max ="7" 
+								 step ="1" 
+								 value ="4"/>(Enter a number between 0 and 7)
+					   </label>
+					</p>
+					<p>
+					   <label>Range <br>0
+						  <input type = "range" 
+								 step ="2" 
+								 value ="20" 
+								 min ="0" 
+								 max ="40"/>40
+					   </label>
+			        </p>
+					<p>
+					   <label>Search Query:
+						  <input type = "search" 
+								 placeholder ="search query" />(Enter your search query here)
+					   </label>
+			        </p>
+					<p>
+					   <label>Tel:
+						  <input type = "tel" 
+								 placeholder ="(###) ###-####" required 
+								 pattern ="\d(\d(3)\)+\d(3)-\d(4)" />(###) ###-####
+						</label>
+			        </p>
+					<p>
+					   <label>Time
+						  <input type = "time" />(hh:mm:ss ff)
+					   </label>
+			        </p>	  
+					<p>
+					   <label>URL:
+						  <input type = "url" 
+								 placeholder ="http://www.domainname.com"/>(http://www.domainname.com)
+					   </label>
+					</p>
+			        <p>
+					   <label>Week
+						  <input type = "week" />(week, No.,yyyy)
+					   </label>
+			        </p>
+					<p>
+					   <label>
+						  <input type = "submit" value ="submit" />
+						  <input type ="reset" value ="clear"/>
+					   </label>
+			        </p>
+				 </fieldset>
+			 </form>
+		</body>
+</html>
